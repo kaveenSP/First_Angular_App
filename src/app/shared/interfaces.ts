@@ -1,8 +1,9 @@
 export interface ICustomer {
+    //id?: number means this field is optional
     id: number;
     name: string;
     city: string;
-    orderTotal?: number;
+    orderTotal: number;
     customerSince: any;
 }
 

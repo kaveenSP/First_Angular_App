@@ -12,7 +12,7 @@ export class CustomersComponent implements OnInit {
   people: ICustomer[] = [];
   isVisible: boolean = true;
 
-  chengeVisibilty() {
+  changeVisibilty() {
     this.isVisible = !this.isVisible
   }
 
