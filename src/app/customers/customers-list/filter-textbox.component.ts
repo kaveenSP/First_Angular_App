@@ -3,7 +3,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 @Component({
     selector: 'filter-textbox',
     template: `
-        Filter: <input type="text" />
+        Filter: <input type="text" [(ngModel)]="filter" />
+        <!-- Filter: <input type="text" [value]="filter" (input)="filter=$event.target.value" /> -->
     `
 })
 
