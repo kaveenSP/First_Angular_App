@@ -8,6 +8,8 @@ import { CustomersListComponent } from './customers/customers-list/customers-lis
 import { FilterTextboxComponent } from './customers/customers-list/filter-textbox.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { AppRoutingModule } from './app-routing.module';
+import { OrdersComponent } from './orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { CoreModule } from './core/core.module';
     CustomersComponent,
     CustomersListComponent,
     FilterTextboxComponent,
+    OrdersComponent,
   ],
   imports: [
     BrowserModule,
     SharedModule,
     FormsModule,
-    CoreModule
+    CoreModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
